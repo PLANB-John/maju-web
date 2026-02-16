@@ -9,16 +9,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F5F6FA", // 이음 사이트 배경색
-        primary: "#5467F5",    // 메인 파란색 버튼
-        secondary: "#7C3AED",  // 보라색 포인트
-        dark: "#333333",       // 본문 텍스트
-        gray: "#999999",       // 연한 텍스트
-        border: "#EEEEEE",     // 연한 테두리
+        ieum: {
+          bg: "#FDFDFF",         // 전체 배경
+          primary: "#6B77F8",    // 메인 로고/버튼 (블루퍼플)
+          text: "#1C1C1E",       // 진한 글씨
+          gray: "#999999",       // 연한 글씨
+          
+          // 그래프 노드 색상 (동물 배경)
+          nodeYellow: "#FFF4CE",
+          nodeGreen: "#E3F6ED",
+          nodeBlue: "#E5F0FF",
+          nodePink: "#FFE8F1",
+          nodeOrange: "#FFF0E0",
+
+          // 그래프 라인/라벨 색상
+          labelGreen: "#4CAF50",
+          labelOrange: "#FF9800",
+          labelBlue: "#2196F3",
+          labelRed: "#FF5252",
+        },
+      },
+      fontFamily: {
+        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'sans-serif'],
       },
       boxShadow: {
-        'card': '0 2px 10px rgba(0, 0, 0, 0.03)', // 아주 은은한 그림자
-        'float': '0 8px 20px rgba(84, 103, 245, 0.25)', // 버튼 그림자
+        'card': '0 4px 24px rgba(0, 0, 0, 0.06)',
+        'button': '0 4px 12px rgba(107, 119, 248, 0.3)',
       }
     },
   },
